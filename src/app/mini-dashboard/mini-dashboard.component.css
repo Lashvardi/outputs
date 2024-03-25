@@ -1,0 +1,12 @@
+.music-card{
+    width: 600px;
+    height: 150px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
