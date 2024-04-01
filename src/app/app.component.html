@@ -1,10 +1,8 @@
 <div class="dashboard-wrapper">
   <ng-container *ngIf="component === components.MINI_DASHBOARD">
-    <app-mini-dashboard
-    [album]="music.album"
-    [title]="music.title"
-    *ngFor="let music of musicList">
-   </app-mini-dashboard>
+    <app-mini-dashboard-viewer (changeComponent)="switchToDashboard()" [musicData]="musicList">
+
+    </app-mini-dashboard-viewer>
   </ng-container>
 
   <ng-container *ngIf="component === components.DASHBOARD">

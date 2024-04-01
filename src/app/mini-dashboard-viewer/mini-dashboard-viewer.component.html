@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <div class="button-container">
+        <button (click)="changeComponentEvent()" class="button">Toggle Dashboard</button>
+    </div>
+
+    <div class="dashboard">
+        <app-mini-dashboard
+        [album]="music.album"
+        [title]="music.title"
+        *ngFor="let music of musicData">
+       </app-mini-dashboard>
+    </div>
+</div>

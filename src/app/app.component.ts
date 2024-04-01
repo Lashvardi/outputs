@@ -22,6 +22,11 @@ export class AppComponent {
   // ცვლადს
   components = COMPONENT;
 
+
+  switchToDashboard() {
+    this.component = this.components.DASHBOARD;
+  }
+
   musicList: IMusic[] = [
     {
       id: 1,
